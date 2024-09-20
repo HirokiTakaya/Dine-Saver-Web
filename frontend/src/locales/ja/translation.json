@@ -1,0 +1,10 @@
+
+{
+    "app_name": "ダインセーバー",
+    "logout": "ログアウト",
+    "confirm_logout": "ログアウトしますか？",
+    "yes": "はい",
+    "no": "いいえ",
+    "logout_success": "ログアウト成功: ログアウトしました。",
+    "logout_failed": "ログアウト失敗: "
+  }

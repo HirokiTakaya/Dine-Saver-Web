@@ -1,0 +1,98 @@
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+
+const resources = {
+  en: {
+    translation: {
+      app_name: "Dine Saver",
+      logout_success: "Logout Successful",
+      logout_failed: "Logout Failed",
+      logout: "Logout",
+      confirm_logout: "Do you want to logout?",
+      yes: "Yes",
+      no: "No",
+      Search: "Search",
+      "Tracking Expense": "Tracking Expense",
+      "Recorded Expense": "Recorded Expense",
+      location_placeholder: "Enter Location (e.g., Tokyo, Shibuya)",
+      term_placeholder: "Enter Search Term (e.g., Sushi, Starbucks)",
+      search_button: "Search",
+      filter_by: "Filter by",
+      filter_rating: "Rating",
+      filter_review_count: "Review Count",
+      filter_distance: "Distance",
+      filter_price_low_to_high: "Price: Low to High",
+      filter_price_high_to_low: "Price: High to Low",
+      expense_name: "Expense Name",
+      enter_date: "Enter date (YYYY-MM-DD)",
+      amount: "Amount ($)",
+      add_expense: "Add Expense",
+      expense_success: "Success: Expense added successfully!",
+      expense_failed: "Error: Failed to add expense",
+      unknown_error: "Error: An unknown error occurred",
+      // Additional translations for LoginScreen and SignUp
+      email: "Email",
+      password: "Password",
+      login: "Login",
+      logging_in: "Logging in...",
+      login_google: "Login with Google",
+      sign_up_email: "Sign Up with Email",
+      sign_up_google: "Sign Up with Google",
+      signing_up: "Signing up...",
+      error_missing_credentials: "Please enter both email and password.",
+      error_invalid_email: "Please enter a valid email.",
+    },
+  },
+  ja: {
+    translation: {
+      app_name: "ダインセーバー",
+      logout_success: "ログアウトに成功しました",
+      logout_failed: "ログアウトに失敗しました",
+      logout: "ログアウト",
+      confirm_logout: "ログアウトしますか？",
+      yes: "はい",
+      no: "いいえ",
+      Search: "検索",
+      "Tracking Expense": "費用追跡",
+      "Recorded Expense": "記録された費用",
+      location_placeholder: "場所を入力 (例: 東京、渋谷)",
+      term_placeholder: "検索ワードを入力 (例: 寿司、スターバックス)",
+      search_button: "検索",
+      filter_by: "絞り込み",
+      filter_rating: "評価",
+      filter_review_count: "レビュー数",
+      filter_distance: "距離",
+      filter_price_low_to_high: "価格が安い順",
+      filter_price_high_to_low: "価格が高い順",
+      expense_name: "費用名",
+      enter_date: "日付を入力 (YYYY-MM-DD)",
+      amount: "金額 (円)",
+      add_expense: "費用を追加",
+      expense_success: "成功: 費用が正常に追加されました！",
+      expense_failed: "エラー: 費用の追加に失敗しました",
+      unknown_error: "エラー: 不明なエラーが発生しました",
+      // Additional translations for LoginScreen and SignUp
+      email: "メールアドレス",
+      password: "パスワード",
+      login: "ログイン",
+      logging_in: "ログイン中...",
+      login_google: "Googleでログイン",
+      sign_up_email: "メールでサインアップ",
+      sign_up_google: "Googleでサインアップ",
+      signing_up: "サインアップ中...",
+      error_missing_credentials: "メールアドレスとパスワードを入力してください。",
+      error_invalid_email: "有効なメールアドレスを入力してください。",
+    },
+  },
+};
+
+i18n.use(initReactI18next).init({
+  resources,
+  lng: "en", // Default language
+  fallbackLng: "en",
+  interpolation: {
+    escapeValue: false,
+  },
+});
+
+export default i18n;

@@ -1,0 +1,9 @@
+{
+    "app_name": "Dine Saver",
+    "logout": "Logout",
+    "confirm_logout": "Do you want to logout?",
+    "yes": "Yes",
+    "no": "No",
+    "logout_success": "Logout Successful: You have been logged out.",
+    "logout_failed": "Logout Failed: "
+  }
