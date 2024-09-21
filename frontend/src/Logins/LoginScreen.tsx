@@ -105,7 +105,12 @@ const LoginScreen: React.FC = () => {
 
   return (
     <Container>
-      <Input
+  {/* Display the email and password as plain text */}
+      <div>
+        <p>Email: chosenonehao@yahoo.co.jp</p>
+        <p>Password: 000000</p>
+      </div>   
+   <Input
         type="email"
         placeholder={t('email')} // Translated placeholder
         value={email}
